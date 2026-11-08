@@ -24,7 +24,7 @@ jobs:
 
       - name: Detect tech stack
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: node scripts/update-tech-stack.js
 
