@@ -104,12 +104,13 @@ async function api(url) {
   return response.json();
 }
 
+
 async function getRepositories() {
   const repositories = [];
 
   for (let page = 1; ; page++) {
     const data = await api(
-      `https://api.github.com/users/${USERNAME}/repos?type=owner&per_page=100&page=${page}`
+      `https://api.github.com/user/repos?visibility=all&affiliation=owner&per_page=100&page=${page}`
     );
 
     repositories.push(...data);
@@ -225,26 +226,34 @@ async function main() {
     }
   );
 
-  const detectedLanguages = new Set(
-    [...languages].filter(name => BADGES[name])
+
+const detectedLanguages = new Set(
+  [...languages].filter(name => BADGES[name])
+);
+
+  // Never show programming languages in the tools section
+  const detectedTechnologies = new Set(
+    [...technologies].filter(
+      name => BADGES[name] && !detectedLanguages.has(name)
+    )
   );
-
+  
   const sections = [];
-
+  
   if (detectedLanguages.size) {
     sections.push(
       "**Languages**\n\n" +
       createBadges(detectedLanguages)
     );
   }
-
-  if (technologies.size) {
+  
+  if (detectedTechnologies.size) {
     sections.push(
       "**Frameworks, Libraries & Tools**\n\n" +
-      createBadges(technologies)
+      createBadges(detectedTechnologies)
     );
   }
-
+  
   const generated = sections.length
     ? sections.join("\n\n")
     : "No technologies detected yet.";
