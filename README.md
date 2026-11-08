@@ -1,8 +1,8 @@
 **Hey, I'm Vishvaas!** <img height="35" src="https://github.com/user-attachments/assets/3872de58-b698-42aa-93b9-bde9ba5a16a6" />
 
-- Full-Stack Developer · Backend Engineer · Bot Developer
+> Full-Stack Developer · Backend Engineer · Bot Developer
 
-## Tech Stack
+### Tech Stack
 
 <!-- TECH-STACK:START -->
 **Languages**
@@ -20,20 +20,8 @@
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 <!-- TECH-STACK:END -->
 
----
-
-## GitHub Stats
+### GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vishvaaskr&show_icons=true&theme=tokyonight&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vishvaaskr&layout=compact&theme=tokyonight&hide_border=true)
-
----
-
-## GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vishvaaskr&show_icons=true&theme=tokyonight&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vishvaaskr&layout=compact&theme=tokyonight&hide_border=true)
-
----
