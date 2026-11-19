@@ -26,3 +26,7 @@
 ![Sharp](https://img.shields.io/badge/Sharp-99CC00?style=for-the-badge&logo=sharp&logoColor=black)
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 <!-- TECH-STACK:END -->
+
+> View Count:
+
+![Count](https://count.getloli.com/@vishvaaskr?theme=3d-num&padding=5&offset=0&scale=0.5&pixelated=1&darkmode=auto)
